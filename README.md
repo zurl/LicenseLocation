@@ -1,7 +1,10 @@
 # 概述
 这个项目实现了“车牌检测与识别”中的第一个子任务，使用的开发环境是
+
 Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
+
 项目提供了源代码，在detect.py中实现了detect_licese函数用于检测车牌，在detect_test.py中实现了对检测结果的正确性检验.
+
 # 算法
 该项目实现了一个基于机器视觉的途径的车牌检测算法,算法的流程如下:
 1. 使用opencv的库函数将图片读入
