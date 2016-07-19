@@ -4,6 +4,7 @@ Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 项目提供了源代码，在detect.py中实现了detect_licese函数用于检测车牌，在detect_test.py中实现了对检测结果的正确性检验.
 # 算法
 该项目实现了一个基于机器视觉的途径的车牌检测算法,算法的流程如下:
+<pre>
 1. 使用opencv的库函数将图片读入
 2. 将图片resize为统一尺寸
 3. 将图片转为灰度图
@@ -21,14 +22,14 @@ Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 2. 对结果进行目标包含测试
 3. 对结果进行面积对比测试
 4. 分别对第一顺位的结果和前三顺位的结果计算正确率
-
+</pre>
 # 效果检测
-
+<pre>
 这里并没有采用PPT中提供的方法进行校检，本项目的效果检测分为两部分：
 1.包含测试：检测标记点是否全在算法得到的矩形中
 2.面积对比：对比标记点构成矩形面积与算法得到的矩阵的面积
 这里由于算法具有局限性，在面积系数使用了较大的6.8倍，同时计算corr1与corr3，分别是在算法给出结果集的第一个和前三种是否拥有通过测试的矩形的数目的比例。
-
+</pre>
 # 核心算法
 
 ## 亮度增强算法
@@ -58,7 +59,7 @@ Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 [2]Approach of Car License Plate Location based on Improved Sobel Operator with the Combination of Mathematical Morphology，YanlingCui ， Chengjun Yang
 
 # 后记
-
+<pre>
 1. 为什么要选择这个项目
 群里一共提供了三个项目，一个歌曲推荐，一个车牌检测还有一个算法实现，我都一一的阅读了一下，
 因为我之前没有任何这方面的基础，也一点不了解图像处理有关的技术，所以在我读了一下推荐的入门读物之后，选择了一个貌似和机器学习很有关的歌曲推荐项目，并且简单的实现了一个协同过滤算法（这里不引用原文了），但是这个算法需要维护一个与歌曲数目N有关的N*N矩阵，但是歌曲数量着实巨大，我在选择了其中800首作为样本之后，很遗憾正确率是0，这令我十分灰心……后来觉得这可能是我的电脑的计算能力的问题，而后就准备尝试一下车牌检测的项目，其中很自然的就想到先尝试第一个任务。
@@ -73,4 +74,4 @@ Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 8. 最后的轮廓检测算法和外接矩形都是在OpenCV文档上找到的，感觉文档都是很靠谱的。
 9. 我感觉算法的效果很糟糕，也不是很清楚怎么提高它，目前只能调参……比较尴尬
 10. 最后发现这个项目貌似和机器学习关系不大………………但是学到了openCV应该怎么用感觉收获还是很大的...
-
+</pre>
