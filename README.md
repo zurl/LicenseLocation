@@ -75,9 +75,9 @@ Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 [1]An efficient method of license plate location，Danian Zheng, Yannan Zhao, Jiaxin Wang
 [2]Approach of Car License Plate Location based on Improved Sobel Operator with the Combination of Mathematical Morphology，YanlingCui ， Chengjun Yang
 
-## 效果
+# 效果
 
-在随机选定的部分数据集([350:500])上达到了Corr1 = 42% Corr3 = 44%的效果
+在随机选定的部分数据集([350:500])上达到了Corr1 = 41% Corr3 = 47%的效果。
 
 # 后记
 1. 为什么要选择这个项目
