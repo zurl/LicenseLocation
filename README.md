@@ -71,10 +71,13 @@ Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 
 根据openCV文档的指示，使用openCV库函数对开闭运算后的图像运行轮廓检测，对轮廓寻找外接旋转矩形。
 
-
 ## 参考文献
 [1]An efficient method of license plate location，Danian Zheng, Yannan Zhao, Jiaxin Wang
 [2]Approach of Car License Plate Location based on Improved Sobel Operator with the Combination of Mathematical Morphology，YanlingCui ， Chengjun Yang
+
+## 效果
+
+在随机选定的部分数据集([350:500])上达到了Corr1 = 42% Corr3 = 44%的效果
 
 # 后记
 1. 为什么要选择这个项目
