@@ -1,8 +1,8 @@
-### 概述
+# 概述
 	这个项目实现了“车牌检测与识别”中的第一个子任务，使用的开发环境是
 	Windows10 + Anaconda 4.1.1 (with Python 2.7 Numpy Pandas Matplotlib) + OpenCV 3
 	项目提供了源代码，在detect.py中实现了detect_licese函数用于检测车牌，在detect_test.py中实现了对检测结果的正确性检验.
-### 算法
+# 算法
 	该项目实现了一个基于机器视觉的途径的车牌检测算法,算法的流程如下:
 	1. 使用opencv的库函数将图片读入
 	2. 将图片resize为统一尺寸
@@ -22,14 +22,14 @@
 	3. 对结果进行面积对比测试
 	4. 分别对第一顺位的结果和前三顺位的结果计算正确率
 
-### 效果检测
+# 效果检测
 
 	这里并没有采用PPT中提供的方法进行校检，本项目的效果检测分为两部分：
 	1.包含测试：检测标记点是否全在算法得到的矩形中
 	2.面积对比：对比标记点构成矩形面积与算法得到的矩阵的面积
 	这里由于算法具有局限性，在面积系数使用了较大的6.8倍，同时计算corr1与corr3，分别是在算法给出结果集的第一个和前三种是否拥有通过测试的矩形的数目的比例。
 
-### 核心算法
+# 核心算法
 
 ## 亮度增强算法
 
@@ -53,11 +53,11 @@
 	根据openCV文档的指示，使用openCV库函数对开闭运算后的图像运行轮廓检测，对轮廓寻找外接旋转矩形。
 
 
-	## 参考文献
+## 参考文献
 	[1]An efficient method of license plate location，Danian Zheng, Yannan Zhao, Jiaxin Wang
 	[2]Approach of Car License Plate Location based on Improved Sobel Operator with the Combination of Mathematical Morphology，YanlingCui ， Chengjun Yang
 
-### 后记
+# 后记
 
 	1. 为什么要选择这个项目
 	群里一共提供了三个项目，一个歌曲推荐，一个车牌检测还有一个算法实现，我都一一的阅读了一下，
